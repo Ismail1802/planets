@@ -1,0 +1,332 @@
+.main__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1110px;
+  margin-top: 5rem;
+}
+.main__picture {
+  img {
+    max-width: 500px;
+    max-height: 500px;
+  }
+}
+.main__pic-cont {
+  position: relative;
+  margin-left: 5rem;
+}
+.main__surface {
+  display: none;
+}
+.main__surface.show {
+  display: block;
+  img {
+    max-width: 500px;
+    max-height: 500px;
+  }
+}
+.main__picture-show {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5rem;
+  z-index: 1;
+  img {
+    width: 163px;
+    height: 199px;
+  }
+}
+.main__mobile-nav {
+  display: none;
+}
+.main__info {
+  width: 350px;
+}
+.main__text {
+  h2 {
+    font-size: 80px;
+    font-family: "Antonio", sans-serif;
+    line-height: 103px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+.main__overview {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  height: 170px;
+}
+
+.main__source {
+  display: flex;
+  gap: 5px;
+  margin: 24px 0 39px 0;
+  font-weight: 500;
+  a {
+    display: flex;
+    align-items: center;
+    color: var(--gray);
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+}
+.main__buttons-cont {
+  display: flex;
+  flex-direction: column;
+}
+.main__button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid var(--gray);
+  color: var(--white);
+  font-weight: 700;
+  height: 48px;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.16rem;
+  transition: all 0.3s ease-in-out;
+  span {
+    color: var(--gray);
+    margin-left: 2rem;
+  }
+  &:hover {
+    scale: 1.05;
+    cursor: pointer;
+    background-color: var(--dark-gray);
+  }
+}
+.main__button.Mercury.active {
+  background-color: var(--sea-blue);
+}
+.main__button.Venus.active {
+  background-color: var(--orange);
+}
+.main__button.Earth.active {
+  background-color: var(--purple);
+}
+.main__button.Mars.active {
+  background-color: var(--low-red);
+}
+.main__button.Jupiter.active {
+  background-color: var(--red);
+}
+.main__button.Saturn.active {
+  background-color: var(--lower-red);
+}
+.main__button.Uranus.active {
+  background-color: var(--light-green);
+}
+.main__button.Neptune.active {
+  background-color: var(--dark-blue);
+}
+.footer {
+  margin-top: 65px;
+  padding-bottom: 4rem;
+  width: 100%;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.footer__article {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 1.5rem;
+  width: 255px;
+  height: 128px;
+  border: 2px solid var(--dark-gray);
+  text-transform: uppercase;
+}
+.footer__stats {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--gray);
+}
+.footer__days {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Antonio", sans-serif;
+}
+@media screen and (max-width: 1150px) {
+  .main__content {
+    flex-direction: column;
+  }
+  .main__pic-cont {
+    margin: 0;
+  }
+  .main__info {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main__text {
+    h2 {
+      font-size: 4rem;
+    }
+  }
+  .main__picture {
+    padding: 0;
+  }
+  .main__info {
+    align-items: unset;
+  }
+  .main__source {
+    margin: 0;
+    margin-top: 5rem;
+  }
+  .main__buttons-cont {
+    align-self: flex-end;
+    padding-bottom: 4rem;
+  }
+  .main__button {
+    width: 281px;
+    height: 40px;
+  }
+  .main__overview {
+    width: 339px;
+    height: 110px;
+    font-size: 0.9rem;
+  }
+  .main__picture {
+    img {
+      width: 369px;
+      height: 369px;
+      object-fit: contain;
+    }
+  }
+  .main__picture-show {
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .footer__content {
+    width: 700px;
+  }
+  .footer__article {
+    width: 164px;
+    height: 88px;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+  .footer__stats {
+    font-size: 0.85rem;
+  }
+  .footer__days {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 660px) {
+  .main {
+    text-align: center;
+  }
+  .main__info {
+    flex-direction: column;
+    width: 327px;
+    margin-top: 2rem;
+  }
+  .main__buttons-cont {
+    display: none;
+  }
+  .main__source {
+    justify-content: center;
+  }
+  .main__overview {
+    margin-top: 1rem;
+    width: 327px;
+    height: auto;
+  }
+  .main__source {
+    margin-top: 32px;
+  }
+  .main__mobile-nav {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(240, 17%, 26%);
+    text-transform: uppercase;
+  }
+  .main__mobile-link {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    padding: 20px;
+  }
+  .main__picture {
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+    }
+  }
+  .main__mobile-link.Mercury.active {
+    border-bottom: 4px solid var(--sea-blue);
+  }
+  .main__mobile-link.Venus.active {
+    border-bottom: 4px solid var(--orange);
+  }
+  .main__mobile-link.Earth.active {
+    border-bottom: 4px solid var(--purple);
+  }
+  .main__mobile-link.Mars.active {
+    border-bottom: 4px solid var(--low-red);
+  }
+  .main__mobile-link.Jupiter.active {
+    border-bottom: 4px solid var(--red);
+  }
+  .main__mobile-link.Saturn.active {
+    border-bottom: 4px solid var(--lower-red);
+  }
+  .main__mobile-link.Uranus.active {
+    border-bottom: 4px solid var(--light-green);
+  }
+  .main__mobile-link.Neptune.active {
+    border-bottom: 4px solid var(--dark-blue);
+  }
+  .main__surface.show {
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .main__picture-show {
+    bottom: -2rem;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .footer {
+    margin-top: 2rem;
+  }
+  .footer__content {
+    width: 327px;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .footer__article {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 48px;
+  }
+}
