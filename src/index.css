@@ -48,9 +48,7 @@ body {
   line-height: 25px;
   background-color: var(--bg);
   color: var(--white);
-  /* background-image: url("/assets/background-stars.svg"); */
-  /* background-repeat: no-repeat; */
-  /* background-position: center center; */
+  background-repeat: repeat;
 }
 
 a:not([class]) {
